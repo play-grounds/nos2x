@@ -1,2 +1,3 @@
-# spuxt
-spux template
+# nos2x
+
+nos2s play
