@@ -55,13 +55,22 @@ export default class App extends Component {
     <${Navbar} title="${title}" />
 
     <div class="bg-gray-100">
-      <div class=" px-10 text-green-600 py-3">
+    <div class=" px-10 text-green-600 py-3">
       ${!di.data.loggedIn ?
-        html`<a onClick=${this.login}>Login with nos2x</a>` :
+        html`<a onClick=${this.login}>Login</a>` :
         html`<a onClick=${this.logout}>Logout</a>`
       }
+
       
+
       <div>${di.data.publicKey}</div>
+
+      <div class="font-bold">
+      <br/>
+      <a href="https://github.com/fiatjaf/nos2x#install" target="_blank">Install nos2x!</a>
+      </div>
+
+
       </div>
     </div>`
   }
